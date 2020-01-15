@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* code starts here */
+
+.container {
+	margin: 0 100px;
+}
+
+.current {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+header {
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header a img.logo {
+	height: 55px;
+}
+
+header nav a {
+	color: lightgrey;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+header nav a:hover {
+	color: grey;
+}
+
+.cta {
+	display: flex;
+	margin: 80px 0;
+}
+
+.cta .cta-text {
+	width: 60%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cta .cta-text h1 {
+	font-size: 130px;
+}
+
+.cta .cta-text button {
+	cursor: pointer;
+	width: 240px;
+	height: 44px;
+	margin-top: 20px;
+	background: white;
+	border: 2px solid black;
+	font-size: 20px;
+}
+
+.cta .cta-text button:hover {
+	color: white;
+	background: black;
+}
+
+.cta img {
+	height: 540px;
+}
+
+.main-content {
+	border-top: 2px solid black;
+	padding-top: 48px;
+}
+
+h4 {
+	font-size: 28px;
+}
+
+h3 , h4 {
+	cursor: pointer;
+}
+
+h3:hover , h4:hover {
+	color: grey;
+}
+
+p {
+	font-size: 24px;
+	/*word-spacing: 8px;*/
+	line-height: 28px;
+}
+
+.main-content .top-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-content .top-content .text-content {
+	width: 50%;
+}
+
+.main-content img.middle-img {
+	width: 100%;
+	margin: 48px 0;
+} 
+
+.main-content .bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-content .bottom-content .text-content {
+	width: 31%;
+}
+
+.contact {
+	margin: 48px 0;
+	border-top: 2px solid black;
+	padding-top: 48px;
+}
+
+footer {
+	text-align: center;
+	margin-bottom: 92px;
+}
+
+/* services css starts here */
+/* header and footer is same as homepage */
+
+.services-header img.services-header-img {
+	width: 100%;
+}
+
+.services-header .services-header-text {
+	padding: 50px  0 70px 0;
+	border-bottom: 2px solid black;
+}
+
+h3 {
+	font-size: 40px;
+}
+
+.services-showcase {
+	margin-top: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+}
+
+.services-showcase .services-showcase-text {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	margin-bottom: 70px;
+	width: 630px;
+	height: 380px;
+	justify-content: space-between;	
+	padding: 30px;
+	background: rgb(236, 236, 236);
+}
+
+.services-showcase .services-showcase-text button {
+	background: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 180px;
+	height: 48px;
+	font-size: 16px;
+}
+
+.services-showcase .services-showcase-text button:hover {
+	color: white;
+	background: black;
+} 
+
+.services-info {
+	margin: 70px 0 100px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-info .services-info-text {
+	width: 600px;
+}
+
+.services-info .services-info-text h4 {
+	margin-bottom: 40px;
+}
+
+.services-info .services-info-text ul {
+	list-style-type: square;
+	margin: 40px 0 0 20px;
+}
+
+.services-info img {
+	width: 630px;
+}
+
+/* media queries for tablet view */
+
+@media (max-width: 800px) {
+
+	.container {
+		margin: 0 30px;
+	}
+
+	header {
+		flex-direction: column-reverse;
+	}
+	
+	header nav {
+		margin: 50px 0;
+		width: 100%;
+	}
+
+	header a {
+		margin : 0 auto;
+	}
+
+	.cta .cta-text {
+		width: 100%;
+	}
+	.cta img {
+		display:none;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.main-content .top-content .text-content {
+		width: 47%;
+	}
+
+	/* for services and product page */
+
+	.services-showcase {
+		justify-content: center;
+	}
+
+	.services-info {
+		flex-direction: column;
+	}
+
+	.services-info .services-info-text {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.services-info img.services-info-img {
+		width: 100%;
+	}
+}
+
+
+/* media queries for mobile view */
+
+@media (max-width: 500px) {
+
+	.container {
+		margin: 0;
+	}
+
+	header {
+		margin: 0;
+
+	}
+	header nav {
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav a {
+		text-align: center;
+		width: 100%;
+		border-bottom: 1px solid black;
+		margin-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	header a {
+		width: 100%;
+		border-bottom: 1px solid black;
+	}
+	header a img.logo {
+		margin: 10px 130px;
+		height: 30px;
+	}
+
+	.cta .cta-text h1 {
+		font-size: 68px;
+	}
+	
+	.main-content {
+		margin: 0 20px; 
+		padding-top: 0;
+	}
+
+	.main-content .top-content {
+		display: block;
+	}
+
+	.main-content .top-content {
+		margin: 0;
+	}
+	.main-content .top-content .text-content {
+		width: 100%;
+		margin-top: 30px; 
+	}
+
+	.main-content img.middle-img {
+		margin: 30px 0;
+	}
+
+	.main-content .bottom-content {
+		flex-direction: column;
+	}
+
+	.main-content .bottom-content .text-content {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.contact {
+		margin: 0;
+		padding: 30px 0;
+	}
+
+	footer {
+		margin-bottom: 30px;
+	}
+
+	/* for services and product page */
+
+	.services-header {
+		margin: 70px 20px 50px 20px; 
+	}
+
+	.services-showcase {
+		margin: 0 20px 50px 20px;
+	}
+
+	.services-info {
+		margin: 0 20px 50px 20px;
+	}
+}
